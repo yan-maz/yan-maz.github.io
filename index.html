@@ -5,9 +5,13 @@
   <title>CV de Yan Mazas</title>
   <style>
     body {
+      transition: height 0.5s;
       font-family: Calibri, sans-serif;
       background-color: lightgray ;
       color: black;
+    }
+    body.smaller {
+      height: 50px;
     }
     main {
       font-family: Calibri, sans-serif;
@@ -131,14 +135,14 @@
       width: 56px;
       height: 56px;
     }
-    .nav {
+    body.nav {
       background-color: white;
       position: fixed;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .nav a {
+    body.nav a {
       text-decoration: none;
       color: Black;
       font-size: 34px;
@@ -264,6 +268,16 @@
     </div>
   </div>
 </main>
+  <script>
+    window.addEventListener('scroll', function() {
+      var body = document.querySelector('body');
+      if (window.scrollY > 50) {
+        body.classList.add('smaller');
+      } else {
+        body.classList.remove('smaller');
+      }
+    });
+  </script>
 </html>
 
 
