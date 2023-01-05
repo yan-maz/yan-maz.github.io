@@ -5,32 +5,9 @@
   <title>CV de Yan Mazas</title>
   <style>
     body {
-      transition: height 0.5s;
       font-family: Calibri, sans-serif;
       background-color: lightgray ;
       color: black;
-    }
-    body.smaller {
-      height: 50px;
-    }
-    .nav {
-      background-color: white;
-      position: fixed;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .nav a {
-      text-decoration: none;
-      color: Black;
-      font-size: 34px;
-      margin: 0 20px;
-    }
-    main {
-      font-family: Calibri, sans-serif;
-      background-color: lightgray ;
-      color: black;
-      margin-top: 250px;
     }
     h1 {
       text-align: center;
@@ -109,20 +86,14 @@
     }
     .header {
       background-color: gray;
-      height: 250px;
-      position: fixed;
-      min-height: 100px;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1;
+      height: 375px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
     .header img {
-      width: 210px;
-      height: 210px;
+      width: 375px;
+      height: 375px;
       border-radius: 90%;
       object-fit: cover;
       margin: 0 20px;
@@ -141,12 +112,17 @@
       width: 56px;
       height: 56px;
     }
-    h4 {
-      font-size: 60px;
-      color: midnightblue;
-      margin-top: 50px;
-      padding-top: 50px;
-      text-decoration: underline;
+    .nav {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav a {
+      text-decoration: none;
+      color: Black;
+      font-size: 34px;
+      margin: 0 20px;
     }
   </style>
 </head>
@@ -162,14 +138,12 @@
     <a href="#skills">Compétences</a>
     <a href="#achievements">Expériences professionnelles</a>
     <a href="#education">Formation</a>
-    <a href="#associative-achievements">Expériences associatives</a>
+    <a href="#languages">Expériences associatives</a>
     <a href="#interests">Centres d'intérêt</a>
   </div>
-</body>
-<main>
   <div class="section" id="about-me">
     <div class="section-header">
-      <h4>A propos de moi</h4>
+      <h2>A propos de moi</h2>
     </div>
     <div class="section-content">
       <div class="contact-info">
@@ -219,7 +193,7 @@
       <h3> <img src="total.jpg" alt="Totalenergies logo" class="small-image"> Stagiaire Data Scientist : Totalenergies</h3>
       <p>Décembre 2022 ➝ mai 2023</p>
       <p>Au sein de l’équipe marketing de l’entreprise, utilisation de méthodes statistiques et de modèles de Machine Learning dans le but de mieux connaître les clients. Utilisation de Azure et AWS</p>
-      <h3><img src="soge.png" alt="Société Générale logo" class="large-image"> Stagiaire Data Engineer : Société Générale</h3>
+      <h3><img src="soge.png" alt="Société Générale logo" class="large-image"> Stagiaire à la Société Générale</h3>
       <p>Mai 2022 ➝ novembre 2022</p>
       <p>Gestion de datasets de plusieurs millions de lignes pour cartographier le périmètre de modélisation. Optimisation du code et des pipelines. Participation aux réunions de pilotage avec les experts métiers pour définir les solutions et les ressources</p>
       <h3><img src="amad.png" alt="Amadeus logo" class="small-image"> Chef d'une équipe de 7 personnes pour mon projet d'application</h3>
@@ -267,17 +241,7 @@
       <p>En Europe, Asie et Amérique centrale</p>
     </div>
   </div>
-</main>
-  <script>
-    window.addEventListener('scroll', function() {
-      var body = document.querySelector('body');
-      if (window.scrollY > 50) {
-        body.classList.add('smaller');
-      } else {
-        body.classList.remove('smaller');
-      }
-    });
-  </script>
+</body>
 </html>
 
 
